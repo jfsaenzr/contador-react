@@ -1,15 +1,19 @@
 import './App.css';
 import Boton from './componentes/Boton';
+import Contador from './componentes/Contador';
 import logo from './imganes/logo.png';
+import { useState } from 'react'
 
 function App() {
 
+  const [numClicks, setNumClicks] = useState(0);
+
   const manejarClick = () => {
-    console.log('Click')
+    setNumClicks(numClicks + 1);
   }
 
   const reiniciarContador = () => {
-    console.log('Reiniciar')
+    setNumClicks(0);
   }
 
   return (
@@ -21,7 +25,11 @@ function App() {
           alt='logo'
         />
       </div>
+
       <div className='contenedor-principal'>
+
+        <Contador numClicks={numClicks} />
+
         <Boton
           texto='Click'
           esBotonDeClick={true}
