@@ -31,7 +31,7 @@ body {
 }
 
 .contenedor-principal {
-    min-width: 600px;
+    /*min-width: 600px;*/
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
