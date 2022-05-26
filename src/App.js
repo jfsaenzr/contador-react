@@ -32,7 +32,7 @@ function App() {
 
       <div className='contenedor-principal'>
 
-        <h2>Contador</h2>
+        <h2>Contador en React.js</h2>
 
         <Contador numClicks={numClicks} />
 
