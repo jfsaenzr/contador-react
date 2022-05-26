@@ -12,6 +12,10 @@ function App() {
     setNumClicks(numClicks + 1);
   };
 
+  const manejarClickRestar = () => {
+    setNumClicks(numClicks - 1);
+  };
+
   const reiniciarContador = () => {
     setNumClicks(0);
   };
@@ -31,9 +35,14 @@ function App() {
         <Contador numClicks={numClicks} />
 
         <Boton
-          texto='Click'
+          texto='+'
           esBotonDeClick={true}
           manejarClick={manejarClick}
+        />
+        <Boton
+          texto='-'
+          esBotonDeClick={true}
+          manejarClick={manejarClickRestar}
         />
         <Boton
           texto='Reiniciar'
