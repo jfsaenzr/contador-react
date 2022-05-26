@@ -32,6 +32,8 @@ function App() {
 
       <div className='contenedor-principal'>
 
+        <h2>Contador</h2>
+
         <Contador numClicks={numClicks} />
 
         <Boton

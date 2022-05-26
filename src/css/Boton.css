@@ -1,7 +1,7 @@
 button {
     width: 250px;
     height: 80px;
-    font-size: 30px;
+    font-size: 60px;
     font-family: Roboto, sans-serif;
     font-weight: bold;
     color: white;
@@ -12,13 +12,17 @@ button {
 }
 
 button:hover {
-    background-color: #00471b;
+    background-color: #15B552;
 }
 
 .boton-click {
-    background-color: #002ead;
+    background-color: #168FD5;
 }
 
 .boton-reiniciar {
-    background-color: #5a01a7;
+    background-color: #9013D3;
+}
+
+.boton-reiniciar {
+    font-size: 30px;
 }
